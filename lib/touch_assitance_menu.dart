@@ -37,16 +37,12 @@ class _TouchAssitanceMenuState extends State<TouchAssitanceMenu> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                IconButton(
-                  tooltip: 'Tap to reset color',
-                  onPressed: widget.onreset,
-                  icon: const Icon(
-                    Icons.restart_alt,
-                  ),
-                ),
-              ],
+            IconButton(
+              tooltip: 'Tap to reset color',
+              onPressed: widget.onreset,
+              icon: const Icon(
+                Icons.restart_alt,
+              ),
             ),
             LegendItem(
               color: Colors.red,
