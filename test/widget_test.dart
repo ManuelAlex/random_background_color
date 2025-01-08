@@ -21,7 +21,7 @@ void main() {
 // store inital background color
 final  Color ?intialBackgroundColor =
       (tester.widget(find.byType(Scaffold)) as Scaffold).backgroundColor;
-      //verify that starting background color is white
+      //verify that starting background color is white 
       expect( intialBackgroundColor
       
  ,const Color.fromRGBO(maxRgbValue, maxRgbValue, maxRgbValue, 1),);
@@ -38,6 +38,7 @@ final  Color ?intialBackgroundColor =
 
     // Verify that background color has changed,
     // that is from white to another random color
+
     expect(intialBackgroundColor, 
     isNot(randomBackgroundColor),);
     

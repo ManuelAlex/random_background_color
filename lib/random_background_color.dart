@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:random_background_color/rgb_color_generator.dart';
-/// The class [RandomBackgroundColor] is base of the core implementation 
+/// The class [RandomBackgroundColor] is  the base of the core implementation 
 /// of the  random background color  with a center text 'Hello there'
 class RandomBackgroundColor extends StatefulWidget {
   /// The [RandomBackgroundColor] constructor
@@ -30,22 +30,24 @@ class _RandomBackgroundColorState extends State<RandomBackgroundColor> {
   @override
   Widget build(BuildContext context) {
   
-    return Tooltip(
-      message: 'Double-tap to reset background color',
-      child: GestureDetector(
-       
-        onTap: () {
-          // set color value
-       backgroundColor=_rgbIntGenerator.randomColor; 
-     //  print(backgroundColor==Scaffold.of(context).widget.backgroundColor) ;
-      
-          },
+    return GestureDetector(
+      onTap: () {
+        // set color value
+     backgroundColor=_rgbIntGenerator.randomColor; 
+    
+        },
+      child: Tooltip(
+        message: 'Tap anywhere to generate background color',
         child: Scaffold(
           
           backgroundColor: backgroundColor ?? RgbColorGenerator.defaultColor ,
           
           body: const Center(
-            child:  Text('Hello there'),
+            child:  Text('Hello there',
+            style: TextStyle(
+              fontSize: 40,fontWeight: FontWeight.bold,
+              ),
+              ),
           ),
          
         ),

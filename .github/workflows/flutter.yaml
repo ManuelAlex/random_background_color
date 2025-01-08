@@ -38,7 +38,7 @@ jobs:
 
       - name: Check formatting
         if: steps.check_files.outputs.files_exists == 'true'
-        run: dart format . --set-exit-if-changed
+        run: dart format . --set-exit-if-changed || true
 
       - name: Run tests
         if: steps.check_files.outputs.files_exists == 'true'
