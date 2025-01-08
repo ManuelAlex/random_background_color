@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:random_background_color/legend_item.dart';
 
 /// An Assitive menu to show the currnent rgb color values
-class TouchAssitanceMenu extends StatefulWidget {
-  /// [TouchAssitanceMenu] contructor
-  const TouchAssitanceMenu({
+class TouchAssitiveMenu extends StatefulWidget {
+  /// [TouchAssitiveMenu] contructor
+  const TouchAssitiveMenu({
     required this.child,
     required this.menuController,
     required this.color,
@@ -25,10 +25,10 @@ class TouchAssitanceMenu extends StatefulWidget {
   final Color color;
 
   @override
-  State<TouchAssitanceMenu> createState() => _TouchAssitanceMenuState();
+  State<TouchAssitiveMenu> createState() => _TouchAssitiveMenuState();
 }
 
-class _TouchAssitanceMenuState extends State<TouchAssitanceMenu> {
+class _TouchAssitiveMenuState extends State<TouchAssitiveMenu> {
   @override
   Widget build(BuildContext context) {
     return MenuAnchor(

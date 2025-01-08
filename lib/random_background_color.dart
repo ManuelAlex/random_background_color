@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:random_background_color/rgb_color_generator.dart';
-import 'package:random_background_color/touch_assitance_menu.dart';
+import 'package:random_background_color/touch_assitive_menu.dart';
 
 /// The class [RandomBackgroundColor] is  the base of the core implementation
 /// of the  random background color  with a center text 'Hello there'
@@ -45,7 +45,7 @@ class _RandomBackgroundColorState extends State<RandomBackgroundColor> {
       child: Tooltip(
         message: 'Tap anywhere to generate background color\n'
             'Right click to show color menu',
-        child: TouchAssitanceMenu(
+        child: TouchAssitiveMenu(
           menuController: _menuController,
           color: backgroundColor,
           onreset: () => backgroundColor = RgbColorGenerator.defaultColor,
