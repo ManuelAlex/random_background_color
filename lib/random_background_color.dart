@@ -43,7 +43,8 @@ class _RandomBackgroundColorState extends State<RandomBackgroundColor> {
       onTap: _handleTap,
       onSecondaryTapDown: _handleSecondaryTapDown,
       child: Tooltip(
-        message: 'Tap anywhere to generate background color',
+        message: 'Tap anywhere to generate background color\n'
+            'Right click to show color menu',
         child: TouchAssitanceMenu(
           menuController: _menuController,
           color: backgroundColor,

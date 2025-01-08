@@ -5,6 +5,8 @@ When the user taps anywhere on the screen, the background color changes to a ran
 The app can generate **16,777,216 unique colors** using RGB values.
 
 This is my submission for a test task.
+This application was tested on a macos and have not been test on other
+flutter supported devices yet.
 
 ---
 
