@@ -1,14 +1,25 @@
-# flutter_project_template
-[![flutter_project_template](https://nokycucwgzweensacwfy.supabase.co/functions/v1/get_project_badge?projectId=149)](https://nokycucwgzweensacwfy.supabase.co/functions/v1/get_project_url?projectId=149)
+# Random RGB Background Color Generator App 
 
-📖 Template for flutter projects using solid_lints, CI for tests and analysis.
+This Flutter application displays the text **"Hello there"** in the middle of the screen.  
+When the user taps anywhere on the screen, the background color changes to a randomly generated color.  
+The app can generate **16,777,216 unique colors** using RGB values.
 
-- Uses latest stable flutter
-- Repo name as your project name
-- Organization from your profile email address or default
+This is my submission for a test task.
 
-# Usage
-1. Press "Use this template" on the menu.
-2. Fill Github form with your new repo name and press "Create repository from template"
-3. Wait for it to be created and set up action is complete. In a couple of minutes, you'll see the flutter project created in your repo once Github Actions are complete.
-4. Clone and code.
+---
+
+## Features
+- **Hello There Text**: The app displays the text **"Hello there"** in the center of the screen.
+- **Random Background Color**:
+  - Tapping anywhere on the screen generates a new random background color.
+  - The random color is generated using RGB values, allowing up to **16,777,216 unique color combinations**.
+- **Bonus Feature** (Optional):
+  - Added a **Reset Button** to return the background to the default color.
+  - The app provides **visual feedback** showing the current RGB values on the screen.
+
+---
+
+## Usage Instructions 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ManuelAlex/random_background_color
